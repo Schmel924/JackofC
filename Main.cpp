@@ -1,5 +1,5 @@
 //Using SDL and standard IO
-
+//еыолщрываолрмыволдатр
 #include "main.h"
 
 int main( int argc, char* args[] )

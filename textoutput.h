@@ -1,12 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef TEXT_OUTPUT_H
+#define TEXT_OUTPUT_H
 
-// includes
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include <conio.h>
-//З#include "textoutput.h"
 
 void text_output ( const char*);
 
-#endif //MAIN_H
+#endif //TEXT_OUTPUT_H

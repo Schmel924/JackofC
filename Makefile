@@ -1,7 +1,11 @@
+UNAME = $(shell uname)
 
 #OBJS specifies which files to compile as part of the project
 #Should be added everytiem
-OBJS = t_characteristic.o attribute.o Text_log.o skill.o character.o textoutput.o main.o
+
+
+OBJS = textoutput.o Text_log.o t_characteristic.o attribute.o skill.o item.o inventory.o character.o main.o
+
 
 #CC specifies which compiler we're using
 CC = g++
@@ -29,11 +33,25 @@ LINKER_FLAGS = -lmingw32 -lSDL2main -lSDL2
 
 #This is the target that compiles our executable
 all: hello 
-
+#	echo $(UNAME)
+#Crossplatforming here!!
+ifeq ($(UNAME), Windows_NT)
 
 hello: $(OBJS)
 	$(CC) $(OBJS) $(INCLUDE_PATHS) $(LIBRARY_PATHS)  $(LINKER_FLAGS) -o Jack
 
+else 
+# ifeq ($(UNAME), Linux)
+# RIGHT HERE!!
+hello: $(OBJS)
+	$(CC) $(OBJS) -o Jack
+
+endif
+
+item.o: item.cpp item.h
+	$(CC) -c item.cpp $(COMPILER_FLAGS) 
+inventory.o: inventory.cpp inventory.h
+	$(CC) -c inventory.cpp $(COMPILER_FLAGS) 
 t_characteristic.o: t_characteristic.cpp t_characteristic.h
 	$(CC) -c t_characteristic.cpp $(COMPILER_FLAGS) 
 attribute.o: attribute.cpp attribute.h
@@ -50,4 +68,4 @@ main.o: main.cpp main.h
 	$(CC) -c main.cpp $(COMPILER_FLAGS) 
 
 clean: 
-	rm *.o
+	rm *.o *.exe

@@ -13,7 +13,26 @@ enum Character_Skill //Class skill {....	CreatureSkill skill;....}
 					 //Class Creature {skill skills[SKILLNUM]}
 {
 	ZERO_SKILL = 0,
-	FUCK_YEAH_SKILL,
+	EXPRESSION,
+	PET,
+	DRESSAGE,
+	NURSE,
+	SERVICE,
+	COOK,
+	ROLEPLAY,
+	GLADIATRIX,
+	ENCHANTER,
+	CALLISTHENICS,
+	VOCAL,
+	MUSIC,
+	SECRETARY,
+
+	ORAL,
+	PENETRATION,
+	PETTING,
+	ORGY,
+	XENOPHILY,
+	FETISHISM,
 	SKILLNUM
 };
 

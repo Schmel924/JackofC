@@ -13,7 +13,18 @@ enum Character_Attribute //Class Attribute {....	CreatureAttribute attribute;...
 					 //Class Creature {attribute attributes[attributeNUM]}
 {
 	ZERO_ATTRIBUTE = 0,
-	FUCK_YEAH_ATTRIBUTE,
+	STAMINA,
+	SENSITIVITY,
+	TEMPER,
+	INTELLECT,
+	EGO,
+	EXOTIC,
+	FAT,
+
+	OBEDIENCE,
+	CUSTOM,
+	PRIDE,
+	SPOIL,
 	ATTRIBUTENUM
 };
 

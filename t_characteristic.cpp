@@ -35,6 +35,8 @@ bool t_characteristic::decrement_value ()
 			return false;
 		}
 	else
+		{
 		this -> value = this -> value - 1;
-		return true;
+		}
+	return true;
 }

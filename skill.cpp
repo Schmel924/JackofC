@@ -13,8 +13,10 @@ bool _Skill::train_Skill ()
 			return -1;
 		}
 	else
-		this -> value = this -> value + 1;
-		return 1;
+		{
+			this -> value = this -> value + 1;
+		}
+	return 1;
 }
 
 //IS simple increment! Why not?
@@ -26,8 +28,10 @@ bool _Skill::increment_Value ()
 			return -1;
 		}
 	else
+		{
 		this -> value = this -> value + 1;
-		return 1;
+		}
+	return 1;
 }
 
 

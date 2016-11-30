@@ -13,8 +13,10 @@ bool _Attribute::increment_Value ()
 			return -1;
 		}
 	else
+		{
 		this -> value = this -> value + 1;
-		return 1;
+		}
+	return 1;
 }
 
 

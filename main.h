@@ -1,11 +1,11 @@
-#ifndef _MAIN_H
-#define _MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 
 // includes
 #include <SDL2/SDL.h>
 #include <stdio.h>
-#include <conio.h>
-#include "declarations.h"
 
 
-#endif
+void text_output ( const char*);
+
+#endif //MAIN_H
